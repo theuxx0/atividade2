@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <div class="container pt-5">
+      <div class="card">
+        <div class="card-body">
+          <label for="quantosAlunos" class="form-label">Quantos alunos?</label>
+          <input type="number" class="form-control mb-2" id="quantosAlunos" />
+          <button onclick="criarListaAlunos()" class="btn btn-primary">Gerar lista</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-3">
+      <div class="card bg-success">
+        <div class="card-body">
+          <div id="listaAlunosCont"></div>
+          <button onclick="gerarMatriz()" class="btn btn-primary">Gerar Matriz</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-3">
+      <div class="card bg-danger">
+        <div class="card-body">
+          <div id="matrizContainer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
